@@ -33,10 +33,10 @@ __1. Solve by substitution:__
 
 $T(n) = T(\frac{n}{13}) + 5$<br>
 $= (T(\frac{n}{13^2}) + 5) + 5$<br>
-$= T(\frac{n}{13^2}) + 10 $<br>
+$= T(\frac{n}{13^2}) + 10$<br>
 $= ... $<br>
-$= T(\frac{n}{13^i}) + 5i $<br>
-$i = log{ _{13} }{n} $ <br>
+$= T(\frac{n}{13^i}) + 5i$<br>
+$i = log{ _{13} }{n} $<br>
 $\implies T(\frac{n}{13^{log{ _{13} }{n}}}) + 5 (log{ _{13}}{n})$<br>
 $= T(1) + 5 (log{ _{13}}{n})$ br>
 $= 5 (log{ _{13}}{n}) \in \Theta(log{n})$<br>
