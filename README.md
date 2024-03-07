@@ -47,14 +47,14 @@ __2. Solve by substitution:__
 
 $T(n) = 13T(\frac{n}{13}) + 5$<br>
 $= 13(13T(\frac{n}{13^2}) + 5) + 5$<br>
-$= 169T(\frac{n}{13^2}) + 14 * 5$<br>
+$= 169T(\frac{n}{13^2}) + 14 \cdot 5$<br>
 $= ...$<br>
-$= 13^iT(\frac{n}{13^i}) + 5 * \sum\_{j=0}^{i}13^j$<br>
+$= 13^iT(\frac{n}{13^i}) + 5 \cdot \sum\limits _{j=0}^{i}13^j$<br>
 $i = log{ _{13}}{n}$<br>
-$\implies 13^{\log{ _{13}}{n}} T(\frac{n}{13^{\log{ _{13}}{n}}})+ 5 * \sum\_{j=0}^{\log{ _{13}}{n}}13^j$<br>$
-$= nT(1) + 5 * \sum\_{j=0}^{\log{ _{13}}{n}}13^j$<br>
-$= n + 5 * (13^{\log{ _{13}}{n}} + \sum\_{j=0}^{\log{ _{13}}{n} - 1}13^j)$<br>
-$n + 5 * (n + \sum\_{j=0}^{\log{ _{13}}{n} - 1}13^j) \in \Theta(n)$<br>
+$\implies 13^{\log{ _{13}}{n}} T(\frac{n}{13^{\log{ _{13}}{n}}})+ 5 \cdot \sum\limits _{j=0}^{\log{ _{13}}{n}} 13^j$<br>$
+$= nT(1) + 5 \cdot \sum\limits _{j=0}^{\log{ _{13}}{n}} 13^j$<br>
+$= n + 5 \cdot (13^{\log{ _{13}}{n}} + \sum\limits _{j=0}^{\log{ _{13}}{n} - 1} 13^j)$<br>
+$n + 5 \cdot (n + \sum\limits _{j=0}^{\log{ _{13}}{n} - 1} 13^j) \in \Theta(n)$<br>
 
 Therefore, $T(n)$ exists in $\Theta(n)$.
 
@@ -76,3 +76,4 @@ Therefore, $T(n)$ exists in $\Theta(n (\log n))$.
 - https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
 - https://github.blog/2022-05-19-math-support-in-markdown/
 - https://latex-tutorial.com/sum-latex/
+- https://math.meta.stackexchange.com/questions/22443/how-to-markup-expression-using-sigma-notation-for-sum-in-mathjax
